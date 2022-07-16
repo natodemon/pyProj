@@ -2,5 +2,6 @@
 
 ## Contents
 
-Task 1: Pandigital
-Task 2: N, Y algorithm
+### Task 1: Pandigital
+
+### Task 2: N, Y algorithm
