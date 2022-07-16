@@ -26,10 +26,18 @@ def numSetGen(max_val):
         if isPandigital(x):
             num_set.add(x)
 
-    return num_set
+    return len(num_set)
+
+def test_numSetGen():
+    print(f'Running tests, you may enter your own test values later\n')
+    test_vals = [10, 22, 350]
+    for val in test_vals:
+        print(f'Input value: {val}')
+        print(f'Result: {numSetGen(val)}')
 
 
-val = input('Please enter D: ')
+test_numSetGen()
 
-pandigitals = numSetGen(int(val))
-print(len(pandigitals))
+val = input(f'\nPlease enter D: ')
+
+print(numSetGen(int(val)))

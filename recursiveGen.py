@@ -25,7 +25,20 @@ def genOutputList(n_values):
     
     return y_list
 
-values = input('Input your N values as a comma separated list please: ')
+def test_genOutputList():
+    print('Starting test. You may enter your own test values after')
+    test_vals = [
+        [5,10],
+        [15,25],
+        [65,93]
+    ]
+    for values in test_vals:
+        print(f'Input values: {values}')
+        print(f'Result: {genOutputList(values)}')
+
+test_genOutputList()
+
+values = input(f'\nInput your N values as a comma separated list please: ')
 
 n_list = values.split(",")
 n_list = [int(i) for i in n_list]
