@@ -21,10 +21,10 @@ def isPandigital(num):
 def numSetGen(max_val):
     num_set = set()
     num_set.add(1)
-    for i in range(2, max_val+1):
+    for x in range(2, max_val+1):
         #print(i)
-        if isPandigital(i):
-            num_set.add(i)
+        if isPandigital(x):
+            num_set.add(x)
 
     return num_set
 
